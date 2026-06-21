@@ -1,0 +1,13 @@
+{
+  "name": "kamzybee-enterprise",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev:admin": "npm --prefix admin-studio run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev": "concurrently \"npm --prefix admin-studio run dev\" \"npm --prefix frontend run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
